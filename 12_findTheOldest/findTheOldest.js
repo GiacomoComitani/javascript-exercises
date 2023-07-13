@@ -12,8 +12,7 @@ const findTheOldest = function(array) {
           oldestPerson = currentPerson;
         }
       } else {
-        const currentYearOfDeath = currentPerson.yearOfDeath;
-        const ageAtDeath = currentYearOfDeath - currentPerson.yearOfBirth;
+        const ageAtDeath = currentPerson.yearOfDeath - currentPerson.yearOfBirth;
   
         if (ageAtDeath > maxAge) {
           maxAge = ageAtDeath;
